@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 10px;
+}
+
+h3,
+label {
+  color: rgb(13, 20, 83);
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('img/kittyContact.jpg') center fixed no-repeat;
+  background-size: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 70vh;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.input {
+  width: 30vw;
+  height: 20px;
+  margin: 10px 10px;
+  caret-color: #ff1008;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+textarea {
+  width: 90%;
+  height: 30vh;
+  margin: 10px 0;
+  caret-color: #ff1008;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.submit-btn {
+  width: 25%;
+  height: 5vh;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1);
+  background-color: #ff1008;
+}
+
+.contact-pic {
+  display: none;
+}
+
+/* la modale au submit */
+.hidden-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: silver;
+  position: fixed;
+  top: 17%;
+  z-index: 5;
+  width: 95%;
+  height: 52%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.hidden-modal > p {
+  text-align: center;
+}
+
+.modalImg {
+  width: 70vh;
+  height: 50vh;
+}
+
+#closing-modal {
+  font-size: 12px !important;
+}
+
+#close-modal {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color: #ff1008;
+  border-radius: 2%;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 10px 10px;
+  font-family: sans-serif;
+}
+
+.typing {
+  position: relative;
+}
+
+.typing::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: silver;
+  -webkit-animation: typing 4s steps(16) forwards, caret 1s infinite;
+  animation: typing 4s steps(16) forwards, caret 1s infinite;
+}
+
+@-webkit-keyframes typing {
+  to {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes caret {
+  50% {
+    color: black;
+  }
+}
+
+@keyframes caret {
+  50% {
+    color: black;
+  }
+}
+
+/* fin de CSS modale */
+
+@media screen and (min-width: 426px) {
+  .component {
+    flex-direction: row;
+    background: rgb(214, 209, 209);
+  }
+
+  .contact-pic {
+    display: block;
+    height: 70vh;
+    width: 50vw;
+  }
+}

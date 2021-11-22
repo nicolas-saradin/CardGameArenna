@@ -1,0 +1,23 @@
+.logo {
+  display: inline;
+  width: 21vw;
+}
+
+.title {
+  display: inline;
+  float: right;
+  font-size: 9vw;
+  text-align: center;
+  margin: 2vw 4vw;
+}
+@media screen and (min-width: 426px) {
+  .logo {
+    width: 10vw;
+    margin-left: 5vw;
+  }
+  .title {
+    color: white;
+    margin-right: 18vw;
+    font-size: 6vw;
+  }
+}

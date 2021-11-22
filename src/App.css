@@ -1,0 +1,26 @@
+#root {
+  transform: translate(0, -100%);
+  height: 100%;
+}
+
+.bgImage {
+  background-image: url('./components/Accueil/FondsJeuDeCarte.jpg');
+  filter: blur(3px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 426px) {
+  #root {
+    background-image: url('./components/Accueil/FondsDesktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: none;
+  }
+  .bgImage {
+    display: none;
+  }
+}

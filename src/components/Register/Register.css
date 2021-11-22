@@ -1,0 +1,20 @@
+.register-sub-main {
+  display: flex;
+  justify-content: center;
+  height: 136vw;
+  width: 87vw;
+  box-shadow: 11px 12px 13px 12px rgb(207 207 207);
+  padding-top: 6vw;
+  background-color: #ffffffbd;
+}
+@media screen and (min-width: 426px) {
+  .register-sub-main {
+    display: flex;
+    justify-content: center;
+    height: 29vw;
+    box-shadow: 11px 12px 13px 12px rgb(207 207 207);
+    background-color: #ffffffbd;
+    margin: 0 28vw;
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.rulePage {
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffffbd;
+  margin: 6vw;
+  padding: 3vw;
+  height: 100%;
+}
+li {
+  list-style-type: none;
+}
+.rulePage li {
+  margin: 3vw;
+  margin-bottom: 6vw;
+  padding-bottom: 6vw;
+  font-size: 6vw;
+}
+@media screen and (min-width: 426px) {
+  .rulePage li {
+    margin: 3vw;
+    margin-bottom: -8vw;
+    padding-bottom: 6vw;
+    font-size: 1.2vw;
+  }
+}

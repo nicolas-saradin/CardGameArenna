@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+}
+
+.divHeader {
+  margin-top: 32vw;
+}
+
+h2 {
+  text-align: center;
+  margin: 15vw;
+}
+
+img {
+  width: 30vw;
+}
+
+.birdsVScats {
+  margin: 0 5vw;
+}
+
+@media screen and (min-width: 426px) {
+  html,
+  body {
+    height: auto;
+  }
+
+  .divHeader {
+    margin-top: 0;
+  }
+
+  h2 {
+    margin: 8vw;
+    margin-top: 4vw;
+    margin-bottom: 0;
+    font-size: 5vw;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+  }
+
+  img {
+    width: 23vw;
+  }
+
+  .birdsVScats {
+    margin: 0 15vw;
+    margin-bottom: 4vw;
+  }
+
+  .birdsVScats img {
+    filter: drop-shadow(2px 4px 8px white);
+    margin: 0 4vw;
+  }
+
+  .birdsVScats a {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  img {
+    width: 15vw;
+  }
+}
